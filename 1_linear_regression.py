@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-trX = np.linspace(-1, 1, 101)
+trX = np.linspace(-1, 1, 101) #-1到1的平均步长线性空间
 trY = 2 * trX + np.random.randn(*trX.shape) * 0.33 # create a y value which is approximately linear but with some random noise
 
 X = tf.placeholder("float") # create symbolic variables
